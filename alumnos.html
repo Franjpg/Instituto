@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link rel="stylesheet" href="estilos.css">
+  <title>Instituto Uruguayo de la Tecnología</title>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">
+        <a href="index.html">
+          <img src="img/logo.svg">
+          <span>IUdelaT</span>
+        </a>
+      </div>
+      <div>
+        <ul>
+          <a href="index.html"><li>Nosotros</li></a>
+          <a href="alumnos.html"><li>Alumnos</li></a>
+          <a href="contacto.html"><li>Contacto</li></a>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <div class="alumnos">
+    <h1>Alumnos</h1>
+    <table id="tablaMain">
+      <thead>
+        <tr>
+          <th>Foto</th>
+          <th>Nombre</th>
+          <th>Apellido</th>
+          <th>Edad</th>
+          <th>Correo</th>
+        </tr>
+      </thead>
+      <tbody id="cuerpoTabla">
+      </tbody>
+    </table>
+    <br>
+    <br>
+    <div id="fondoVentana">
+    </div>
+    <div id="formulario">
+      <label for="nombre">Nombre</label><br>
+      <input type="text" id="nombre" /><br>
+      <div class="error" id="errornombre">Ingrese correctamente su nombre</div><br>
+
+      <label for="edad">Apellido</label><br>
+      <input type="text" id="apellido" /><br>
+      <div class="error" id="errorapellido">Ingrese correctamente su apellido</div><br>
+
+      <label for="edad">Edad</label><br>
+      <input type="number" id="edad" /><br>
+      <div class="error" id="erroredad">Ingrese correctamente su edad</div><br>
+
+      <label for="email">E-mail</label><br>
+      <input type="email" id="email" /><br>
+      <div class="error" id="erroremail">Ingrese correctamente su email</div><br>
+
+      <label for="foto">URL Foto</label><br>
+      <input type="text" id="foto" /><br>
+
+      <button id="cerrarVentana">Cancelar</button>
+      <input type="submit" value="Crear alumno" id="boton"/>
+    </div>
+    <button id="verVentana">Crear usuario</button>
+  </div>
+  <footer>
+    Instituto Uruguayo de la Tecnologia - Andes 3030 Of.102 - Montevideo, Uruguay
+  </footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="funciones.js" charset="utf-8"></script>
+</body>
+</html>
